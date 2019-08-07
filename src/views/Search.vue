@@ -1,10 +1,17 @@
 <template>
-  <div></div>
+  <div>
+    <Header />
+  </div>
 </template>
 
 <script>
+import Header from "../components/Home/Header";
+
 export default {
-  name: "search"
+  name: "search",
+  components: {
+    Header
+  }
 };
 </script>
 

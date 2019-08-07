@@ -10,7 +10,7 @@
     <ion-row>
       <ion-col class="ion-margin-horizontal">
         <ion-text color="primary">
-          <h1>Don't worry. We know!</h1>
+          <h1>Don't worry. We know for you!</h1>
         </ion-text>
       </ion-col>
     </ion-row>
@@ -23,7 +23,9 @@
     </ion-row>
     <ion-row>
       <ion-col class="ion-margin-horizontal">
-        <ion-button expand="block">Let's find out</ion-button>
+        <router-link to="/search">
+          <ion-button expand="block">Let's find out</ion-button>
+        </router-link>
       </ion-col>
     </ion-row>
   </ion-grid>

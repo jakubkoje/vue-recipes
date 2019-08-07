@@ -2,14 +2,18 @@
   <ion-header>
     <ion-toolbar color="dark">
       <ion-buttons slot="secondary">
-        <ion-button>
-          <ion-icon name="home"></ion-icon>
-        </ion-button>
+        <router-link to="/">
+          <ion-button>
+            <ion-icon name="home"></ion-icon>
+          </ion-button>
+        </router-link>
       </ion-buttons>
       <ion-buttons slot="primary">
-        <ion-button>
-          <ion-icon name="nutrition"></ion-icon>
-        </ion-button>
+        <router-link to="/search">
+          <ion-button>
+            <ion-icon name="nutrition"></ion-icon>
+          </ion-button>
+        </router-link>
       </ion-buttons>
       <ion-title>Recipes</ion-title>
     </ion-toolbar>
@@ -22,5 +26,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+a {
+  color: white;
+}
 </style>
