@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <p>recipes</p>
   </div>
 </template>
 
@@ -8,7 +9,7 @@
 import Header from "../components/Home/Header";
 
 export default {
-  name: "search",
+  name: "recipes",
   components: {
     Header
   }

@@ -2,7 +2,8 @@ import Vue from "vue";
 import { IonicVueRouter } from "@ionic/vue";
 
 import Home from "./views/Home.vue";
-import Search from "./views/Search.vue";
+import Recipes from "./views/Recipes.vue";
+import AddRecipe from "./views/AddRecipe.vue";
 
 Vue.use(IonicVueRouter);
 
@@ -14,9 +15,14 @@ export default new IonicVueRouter({
 			component: Home
 		},
 		{
-			path: "/search",
-			name: "search",
-			component: Search
+			path: "/recipes",
+			name: "recipes",
+			component: Recipes
+		},
+		{
+			path: "/addrecipe",
+			name: "addrecipe",
+			component: AddRecipe
 		}
 	]
 });

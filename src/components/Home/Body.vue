@@ -23,7 +23,7 @@
     </ion-row>
     <ion-row>
       <ion-col class="ion-margin-horizontal">
-        <router-link to="/search">
+        <router-link to="/recipes">
           <ion-button expand="block">Let's find out</ion-button>
         </router-link>
       </ion-col>

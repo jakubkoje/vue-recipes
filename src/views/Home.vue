@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <ion-content>
     <Header />
     <Body />
-  </div>
+  </ion-content>
 </template>
 
 <script>
