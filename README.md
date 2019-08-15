@@ -2,4 +2,4 @@
 
 An incoming app to search recipes by your available ingredients.
 
-Building with vue and ionic.
+Building with Vue (Vue Router, Vuex) and Ionic.
