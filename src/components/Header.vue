@@ -24,7 +24,6 @@
     </ion-toolbar>
   </ion-header>
 </template>
-
 <script>
 export default {
   name: "Header"

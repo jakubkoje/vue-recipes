@@ -2,25 +2,30 @@
   "name": "vue-recipes",
   "version": "0.1.0",
   "private": true,
+  "description": "An incoming app to search recipes by your available ingredients.",
+  "author": "",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "main": "babel.config.js",
   "dependencies": {
     "@ionic/vue": "0.0.4",
-    "core-js": "^2.6.5",
-    "ionicons": "^4.5.9-1",
+    "core-js": "^3.2.1",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.3"
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.1.2",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.9.0",
-    "@vue/cli-plugin-eslint": "^3.9.0",
-    "@vue/cli-service": "^3.9.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "ionicons": "^4.5.9-1",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
@@ -45,5 +50,14 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/jakubkoje/vue-recipes/issues"
+  },
+  "homepage": "https://github.com/jakubkoje/vue-recipes#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakubkoje/vue-recipes.git"
+  }
 }

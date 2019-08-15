@@ -1,17 +1,22 @@
 <template>
   <div>
     <Header />
-    <p>recipes</p>
+    <Results/>
+    <Search/>
   </div>
 </template>
 
 <script>
-import Header from "../components/Home/Header";
+import Header from "../components/Header";
+import Search from "../components/Recipes/Search"
+import Results from "../components/Recipes/Results"
 
 export default {
   name: "recipes",
   components: {
-    Header
+    Header,
+    Search,
+    Results
   }
 };
 </script>

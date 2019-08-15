@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import Header from "../components/Home/Header";
+import Header from "../components/Header";
 import Body from "../components/Home/Body";
 
 export default {

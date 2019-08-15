@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import Header from "../components/Home/Header";
+import Header from "../components/Header";
 export default {
   name: "addrecipe",
   components: {
@@ -66,7 +66,8 @@ export default {
     },
     addRecipe(e) {
       e.preventDefault();
-      this.$emit("add-recipe", this.recipe);
+      this.$http.post("", this.recipe);
+      console.log(this.recipe);
     }
   }
 };
