@@ -24,20 +24,21 @@
       </ion-item>
 
       <ion-list class="ion-margin">
-        <ion-item v-for="ingredient in recipe.ingredients" :key="ingredient">
-          <ion-label>{{ingredient}}</ion-label>
-        </ion-item>
         <ion-item>
+          <ion-label position="stacked">Ingredients</ion-label>
           <ion-input
             class="background"
             placeholder="enter ingredient"
             :value="ingredient"
             @ionInput="ingredient = $event.target.value"
+            @keypress.enter="addIngredient()"
           ></ion-input>
-          <ion-button v-on:click="addIngredient()">Click me</ion-button>
+        </ion-item>
+        <ion-item v-for="ingredient in recipe.ingredients" :key="ingredient">
+          <ion-label>{{ingredient}}</ion-label>
         </ion-item>
       </ion-list>
-      <ion-button expand="block" type="submit">Submit recipe</ion-button>
+      <ion-button class="ion-margin" expand="block" type="submit">Submit recipe</ion-button>
     </form>
   </ion-content>
 </template>
