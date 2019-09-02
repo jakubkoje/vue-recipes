@@ -11,10 +11,11 @@
           @keydown.enter="addIngredient()"
         ></ion-input>
       </ion-item>
+      <ion-item v-for="ingredient in ingredients" :key="ingredient">
+        <ion-label>{{ingredient}}</ion-label>
+        <ion-button color="danger" shape="round" @click="removeIngredient(ingredient)">X</ion-button>
+      </ion-item>
     </ion-list>
-    <ion-item v-for="ingredient in ingredients" :key="ingredient">
-      <ion-label>{{ingredient}}</ion-label>
-    </ion-item>
   </ion-content>
 </template>
 
@@ -31,6 +32,9 @@ export default {
     addIngredient() {
       this.ingredients = [...this.ingredients, this.ingredient];
       this.ingredient = "";
+    },
+    removeIngredient(ingredient) {
+      this.ingredients = this.ingredients.filter(e => e !== ingredient);
     }
   }
 };
