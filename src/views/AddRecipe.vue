@@ -36,6 +36,7 @@
         </ion-item>
         <ion-item v-for="ingredient in recipe.ingredients" :key="ingredient">
           <ion-label>{{ingredient}}</ion-label>
+          <ion-button color="danger" shape="round" @click="removeIngredient(ingredient)">X</ion-button>
         </ion-item>
       </ion-list>
       <ion-button class="ion-margin" expand="block" type="submit">Submit recipe</ion-button>
@@ -64,6 +65,11 @@ export default {
     addIngredient() {
       this.recipe.ingredients = [...this.recipe.ingredients, this.ingredient];
       this.ingredient = "";
+    },
+    removeIngredient(ingredient) {
+      this.recipe.ingredients = this.recipe.ingredients.filter(
+        e => e !== ingredient
+      );
     },
     addRecipe(e) {
       e.preventDefault();
